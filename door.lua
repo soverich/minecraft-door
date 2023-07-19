@@ -13,7 +13,7 @@ players = radar.getPlayers()
             end
             if players[i]["distance"] ~= nil then
                 distance = players[i]["distance"]
-                if distance <= 3.0 then
+                if distance <= 2.0 then
                 redstone.setOutput("top",true)
                 print("opened")
                 sleep(0.8)
